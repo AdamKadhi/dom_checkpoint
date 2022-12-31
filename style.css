@@ -56,6 +56,7 @@ section h1 {
 .products {
   width: 70%;
   height: 100%;
+  position: relative;
 }
 
 table img {
@@ -145,5 +146,5 @@ table th {
   color: red;
   margin: 0 auto;
   position: absolute;
-  visibility:hidden;
+  top: 0;
 }

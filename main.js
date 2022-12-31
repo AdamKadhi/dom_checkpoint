@@ -31,7 +31,11 @@ for (let i = 0; i <= 2; i++) {
     price.innerHTML = Number(price.textContent) - Number(total[i].textContent);
     if (items_removed == 3) {
       titles[0].style.display = "none";
-      empty.style.visibility = "visible";
+      let empty=document.createElement("h1");
+      empty.textContent="Empty Cart";
+      empty.setAttribute("id","empty");
+      let products=document.querySelector('.products');
+      products.appendChild(empty);
     }
   };
 
