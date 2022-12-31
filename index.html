@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f759f54109.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <h1>LOGO</h1>
+      <ul>
+        <li>Login</li>
+        <li>Search <i class="fa-solid fa-magnifying-glass"></i></li>
+        <li>Cart</li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>Your Cart</h1>
+      <div class="cart">
+        <div class="products">
+          <h1 id="empty">Empty Cart</h1>
+          <table>
+            <tr class="titles">
+              <th></th>
+              <th>Products</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+            
+            <tr class="item">
+              <td><i class="fa-solid fa-heart heart" ></i></td>
+              <td class="product">
+                <img src="./products/casque.png" alt="casque" />
+                <span> Casque Gaming</span>
+              </td>
+              <td>150 DT</td>
+              <td class="quantity">
+                <span class="qte">
+                    <button class="minus">-</button> <span class="qte_num">0</span>
+                  <button class="plus">+</button></span
+                >
+              </td>
+              <td><span class="total">0</span> DT</td>
+              <td><i class="fa-solid fa-trash-can delete"></i></td>
+            </tr>
+            <tr class="item">
+              <td><i class="fa-solid fa-heart heart" ></i></td>
+                <td class="product">
+                  <img src="./products/clavier.png" alt="clavier" />
+                  <span> Clavier Mécanique</span>
+                </td>
+                <td>90 DT</td>
+                <td class="quantity">
+                  <span class="qte">
+                      <button class="minus">-</button> <span class="qte_num">0</span>
+                    <button class="plus">+</button></span
+                  >
+                </td>
+                <td><span class="total">0</span> DT</td>
+                <td><i class="fa-solid fa-trash-can delete"></i></td>
+              </tr>
+              <tr class="item">
+                <td><i class="fa-solid fa-heart heart" ></i></td>
+                <td class="product">
+                  <img src="./products/souris.png" alt="souris" />
+                  <span> Souris Gaming</span>
+                </td>
+                <td>60 DT</td>
+                <td class="quantity">
+                  <span class="qte">
+                      <button class="minus">-</button> <span class="qte_num">0</span> 
+                    <button class="plus">+</button></span
+                  >
+                </td>
+                <td><span class="total">0</span> DT </td>
+                <td><i class="fa-solid fa-trash-can delete"></i></td>
+              </tr>
+          </table>
+        </div>
+
+
+        <div class="bill">
+          <h3>Order Summary</h3>
+          <div class="total_price">
+            <span>Total</span>
+            <span> <span id="price">0</span> DT  </span>
+          </div>
+          <button id="check">CHECKOUT</button>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
